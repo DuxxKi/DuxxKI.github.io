@@ -1,43 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Denuncia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Oportunidad</title>
+    <link rel="shortcut icon" href="multimedia/iconh.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/denuncia.css">
 </head>
 <body>
- <center>
-	<h1>Datos del Denunciante</h1>
-	<form method="POST">
-		Nombres:
-		<br>
-		<input type="text" name="nombretx">
-		<br>
-		Apellido Paterno:
-		<br>
-		<input type="text" name="appattx">
-		<br>
-		Apellido Materno:
-		<br>
-		<input type="text" name="apmattx">
-		<br>
-		<br>
-	<h1>Ubicacion de los Hechos</h1>
-		Calle:
-		<br>
-		<input type="text" name="calletx">
-		<br>
-		<br>
-		Colonia:
-		<br>
-		<input type="text" name="coloniatx">
-		<br>
-		<br>
-		Municipio:
-		<br>
-		<input type="text" name="minicipiotx">
-		<br>
-		<br>
-		<input type="submit" name="" value="Guardar" formaction="">
-	</form>
-	<br>
-	<a href="C:\Users\ACER\OneDrive\Documentos\GitHub\DuxxKI.github.io\index.html"><h2>Regresar</h2></a>
- </center>
+    <header class="header">
+        <div class="logoDiv">
+            <img src="multimedia/iconh.png" alt="Logo de la página" >
+            <div class="titleHeader">
+                <h1>Segunda Oportunidad</h1>
+            </div>
+        </div>
+        <div class="navegacion">
+            <button onclick="window.location.href='https://duxxki.github.io/index.html'">Inicio</button>
+            <button onclick="window.location.href='https://duxxki.github.io/cDarAdopcion/Adopcion.html'">Adopcion</button>
+            <button onclick="window.location.href=''">Consulta</button>
+            <button onclick="window.location.href='denuncia.html'">Quejas</button>
+            <button onclick="window.location.href=''">Informacion</button>
+        </div>
+        <div class="logoDiv">
+            <img src="multimedia/user.png" alt="icon user" >
+        </div>
+    </header>
+
+    <main class="main">
+        <center>
+			<h1>Datos del Denunciante</h1>
+			<form method="POST">
+				Nombres:
+				<br>
+				<input type="text" name="nombretx">
+				<br>
+				Apellido Paterno:
+				<br>
+				<input type="text" name="appattx">
+				<br>
+				Apellido Materno:
+				<br>
+				<input type="text" name="apmattx">
+				<br>
+				<br>
+			<h1>Ubicacion de los Hechos</h1>
+				Calle:
+				<br>
+				<input type="text" name="calletx">
+				<br>
+				<br>
+				Colonia:
+				<br>
+				<input type="text" name="coloniatx">
+				<br>
+				<br>
+				Municipio:
+				<br>
+				<input type="text" name="minicipiotx">
+				<br>
+				<br>
+				<input type="submit" name="" value="Guardar" formaction="">
+			</form>
+			<br>
+		 </center>
+    </main>
+
+    <footer class="footer">
+        <p>Este es el Footer</p>
+    </footer>
+</body>
+</html>
