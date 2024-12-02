@@ -97,6 +97,10 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 30px;
+    transition: 500ms;
+}
+.main .infoDiv:hover{
+    transform: scale(1.025);
 }
 .infoDiv .textoDiv{
     height: 100%;
@@ -128,6 +132,14 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 30px;
+}
+.miniTitleContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 /* Estilo del Footer */
@@ -166,15 +178,17 @@ body {
     width: 70%; /* La imagen ocupará el 70% del contenedor */
     height: auto;
     border-radius: 30px;
-    box-shadow: 02px 1px 50px rgb(168, 255, 254);
     transition: transform 0.5s ease;
 }
 
 .textoIMG {
+    font-family: 'Courier';
+    font-size: 20px;
     position: absolute;
     left: 50%; /* Aparece en el espacio libre */
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
     padding: 10px;
     white-space: nowrap;
     opacity: 0; /* Texto invisible al principio */
@@ -188,6 +202,7 @@ body {
 .imgSepContainer:hover .textoIMG {
     opacity: 1; /* Muestra el texto */
     left: 72%; /* Ajusta la posición del texto */
+    box-shadow: 0 1px 50px 0px #6f6f6f;
 }
 .hol{
     color: red;
