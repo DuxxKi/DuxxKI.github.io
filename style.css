@@ -189,3 +189,6 @@ body {
     opacity: 1; /* Muestra el texto */
     left: 72%; /* Ajusta la posición del texto */
 }
+.hol{
+    color: red;
+}
