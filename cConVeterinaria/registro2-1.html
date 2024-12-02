@@ -1,48 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Registro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Oportunidad</title>
+    <link rel="shortcut icon" href="../multimedia/iconh.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Styles/consultas.css">
 </head>
 <body>
-	<center>
-	<h1>Registro de datos</h1>
-   <form method="POST">
-   	nombre :
-   	<br>
-    <input type="text" name="nombretx">
-    <br>
-   <h2>raza:</h2>
-    <input type="radio" value="huskie" >huskie
-    <input type="radio" value="labrador" >labrador
-    <input type="radio" value="pugs" >pugs
-    <input type="radio" value="golden retriver" >golden retriver
-    <input type="radio" value="chiguagua" >chiguagua
+    <header class="header">
+        <div class="logoDiv">
+            <img src="../multimedia/iconh.png" alt="Logo de la página" >
+            <div class="titleHeader">
+                <h1>Segunda Oportunidad</h1>
+            </div>
+        </div>
+        <div class="navegacion">
+            <button onclick="window.location.href='../index.html'">Inicio</button>
+            <button onclick="window.location.href='../cDarAdopcion/Adopcion.html'">Adopcion</button>
+            <button onclick="window.location.href='../cConVeterinaria/registro2-1.html'">Consulta</button>
+            <button onclick="window.location.href='registro2-1.html'">Quejas</button>
+            <button onclick="window.location.href='../cInformacion/info.html'">Informacion</button>
+        </div>
+        <div class="logoDiv">
+            <img src="../multimedia/user.png" alt="icon user" >
+        </div>
+    </header>
 
-    <br>
-    <h2>edad estimada:</h2>
-    <input type="radio" value="15" >15
-    <input type="radio" value="20" >20
-    <input type="radio" value="30" >30
+    <main class="main">
+        <center>
+            <h1>Registro de datos</h1>
+           <form method="POST">
+               nombre :
+               <br>
+            <input type="text" name="nombretx">
+            <br>
+           <h2>raza:</h2>
+            <input type="radio" value="huskie" >huskie
+            <input type="radio" value="labrador" >labrador
+            <input type="radio" value="pugs" >pugs
+            <input type="radio" value="golden retriver" >golden retriver
+            <input type="radio" value="chiguagua" >chiguagua
+        
+            <br>
+            <h2>edad estimada:</h2>
+            <input type="radio" value="15" >15
+            <input type="radio" value="20" >20
+            <input type="radio" value="30" >30
+        
+            <br>
+            <h2>peso:</h2>
+        <input type="text" name="pesottx">
+        <br>
+        <h2>condicion:</h2>
+        <input type="text" name="condttx">
+        <br>
+        <h2>cuidados:</h2>
+        <input type="text" name="ttx">
+        <br>
+        <h2>enfermedades:
+        <br>
+        <input type="radio" name="si" value="si">si
+        <input type="radio" name="no" value="no">no
+        </h2>
+            <input type="submit" name="" value="guardar"
+            formaction="http://localhost/proyect5C/registro1.php">
+        
+           </form>
+        </center>
+    </main>
 
-    <br>
-    <h2>peso:</h2>
-<input type="text" name="pesottx">
-<br>
-<h2>condicion:</h2>
-<input type="text" name="condttx">
-<br>
-<h2>cuidados:</h2>
-<input type="text" name="ttx">
-<br>
-<h2>enfermedades:
-<br>
-<input type="radio" name="si" value="si">si
-<input type="radio" name="no" value="no">no
-</h2>
-    <input type="submit" name="" value="guardar"
-    formaction="http://localhost/proyect5C/registro1.php">
-
-   </form>
-</center>
+    <footer class="footer">
+        <p>Este es el Footer</p>
+    </footer>
 </body>
 </html>
