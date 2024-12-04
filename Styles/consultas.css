@@ -27,7 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.logoDiv img{
+.logoDiv img, .userDiv img{
     width: 80px;
     height: 80px;
     cursor: pointer;

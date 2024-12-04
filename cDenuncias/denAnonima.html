@@ -23,8 +23,9 @@
             <button onclick="window.location.href='denuncia.html'">Quejas</button>
             <button onclick="window.location.href='../cInformacion/info.html'">Informacion</button>
         </div>
-        <div class="logoDiv">
-            <img src="../multimedia/user.png" alt="icon user" >
+        <div class="userDiv">
+            <img src="../multimedia/user.png" alt="icon user">
+            <div id="perfil"></div>
         </div>
     </header>
 
@@ -41,16 +42,11 @@
                 </div>
 
                 <div class="divInputs">
-                    <label for="">Calle: </label>
                     <input type="text" placeholder="Calle" name="calletx">
                 </div>
 
                 <div class="divInputs">
-                    <label for="">Colonia: </label>
                     <input type="text" placeholder="Colonia" name="coloniatx">
-                </div>
-                <div class="divInputs">
-                    <label for="">Numeros Interior y Exterior: </label>
                 </div>
                 <div class="divInputs-nums">
                     <input type="text" placeholder="num Interior" name="minicipiotx">
@@ -58,15 +54,12 @@
                 </div>
 
                 <div class="divInputs">
-                    <label for="">Codigo Postal: </label>
                     <input type="text" placeholder="Codigo Postal" name="minicipiotx">
                 </div>
                 <div class="divInputs">
-                    <label for="">Municipio: </label>
                     <input type="text" placeholder="Municipio" name="minicipiotx">
                 </div>
                 <div class="divInputs">
-                    <label for="">Estado: </label>
                     <input type="text" placeholder="Estado" name="minicipiotx">
                 </div>
 
@@ -88,5 +81,6 @@
     <footer class="footer">
         <p></p>
     </footer>
+    <script src="../VrfLogin.js"></script>
 </body>
 </html>

@@ -16,6 +16,6 @@ if (storedUser) {
     passContainer.innerHTML = `<blockquote class="infoBlock">Password: ${User.password.substring(0, 20)}...</blockquote>`
 
 } else {
-    alert("No has inicado sesion");
-    window.location.href = 'InicioSecion.html';
+    const responseElement = document.getElementById('perfil');
+    responseElement.innerHTML = `<button class="menuBoton" onclick="location.href=''">Inicia Secion</button>`;
 }

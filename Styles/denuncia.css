@@ -27,7 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.logoDiv img{
+.logoDiv img, .userDiv img{
     width: 80px;
     height: 80px;
     cursor: pointer;
@@ -51,7 +51,7 @@ body {
     height: 100%;
 }
 
-.navegacion button{
+.navegacion button, .userDiv .menuBoton{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,7 +72,11 @@ body {
     box-shadow: 0 0 10px 2px rgba(245, 245, 245, 0.5);
     transition: 300ms;
 }
-.navegacion button:hover{
+.userDiv .menuBoton{
+    font-size: 16px;
+    font-weight: 800;
+}
+.navegacion button:hover, .userDiv .menuBoton:hover{
     background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
     backdrop-filter: blur(8px); /* Aplica el efecto de difuminado */
     border: 1px solid rgba(255, 255, 255, 0.5); /* Borde semitransparente */
