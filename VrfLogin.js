@@ -17,5 +17,5 @@ if (storedUser) {
 
 } else {
     const responseElement = document.getElementById('perfil');
-    responseElement.innerHTML = `<button class="menuBoton" onclick="location.href=''">Inicia Secion</button>`;
+    responseElement.innerHTML = `<button class="menuBoton" onclick="location.href='cRegistro\singUp.html'">Inicia Secion</button>`;
 }
