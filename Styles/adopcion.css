@@ -27,7 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.logoDiv img,  .userDiv img{
+.logoDiv img, .userDiv img{
     width: 80px;
     height: 80px;
     cursor: pointer;
@@ -93,6 +93,7 @@ body {
     margin: 1rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 .main .infoDiv{
@@ -136,7 +137,7 @@ body {
     text-align: justify;
     font-weight: 500;
 }
-.textoDiv h1, .infoDiv-txt h1{
+.textoDiv h1, .infoDiv-txt h1, .titleFrom h1{
     font-family: 'Courier';
     font-size: 38px;
     font-weight: 900;
@@ -168,6 +169,7 @@ body {
     margin-bottom: 30px;
 }
 
+
 /* Estilo del Footer */
 .footer {
     background-color: #61e8df;
@@ -183,4 +185,56 @@ body {
 }
 .txt2{
     color: #454869;
+}
+
+
+
+
+
+
+
+.separador{
+    width: 100%;
+    height: 80px;
+}
+.imgSepContainer{
+    position: relative;
+    width: 100%;
+    height: 100%; /* Altura fija para la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.imagen {
+    width: 70%; /* La imagen ocupará el 70% del contenedor */
+    height: auto;
+    border-radius: 30px;
+    transition: transform 0.5s ease;
+}
+
+.textoIMG {
+    font-family: 'Courier';
+    font-size: 20px;
+    position: absolute;
+    left: 50%; /* Aparece en el espacio libre */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    white-space: nowrap;
+    opacity: 0; /* Texto invisible al principio */
+    transition: opacity 0.5s ease, left 0.5s ease;
+}
+
+.imgSepContainer:hover .imagen {
+    transform: translateX(20%); /* Desplaza la imagen hacia la izquierda */
+}
+
+.imgSepContainer:hover .textoIMG {
+    opacity: 1; /* Muestra el texto */
+    left: 4%; /* Ajusta la posición del texto */
+    box-shadow: 0 1px 50px 0px #6f6f6f;
 }
