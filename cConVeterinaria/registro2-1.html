@@ -6,6 +6,7 @@
     <title>Segunda Oportunidad</title>
     <link rel="shortcut icon" href="../multimedia/iconh.png" type="image/x-icon">
     <link rel="stylesheet" href="../Styles/consultas.css">
+    <link rel="stylesheet" href="../Styles/fromDen.css">
 </head>
 <body>
     <header class="header">
@@ -29,51 +30,91 @@
     </header>
 
     <main class="main">
-        <center>
-            <h1>Registro de datos</h1>
-           <form method="POST">
-               nombre :
-               <br>
-            <input type="text" name="nombretx">
-            <br>
-           <h2>raza:</h2>
-            <input type="radio" value="huskie" >huskie
-            <input type="radio" value="labrador" >labrador
-            <input type="radio" value="pugs" >pugs
-            <input type="radio" value="golden retriver" >golden retriver
-            <input type="radio" value="chiguagua" >chiguagua
-        
-            <br>
-            <h2>edad estimada:</h2>
-            <input type="radio" value="15" >15
-            <input type="radio" value="20" >20
-            <input type="radio" value="30" >30
-        
-            <br>
-            <h2>peso:</h2>
-        <input type="text" name="pesottx">
-        <br>
-        <h2>condicion:</h2>
-        <input type="text" name="condttx">
-        <br>
-        <h2>cuidados:</h2>
-        <input type="text" name="ttx">
-        <br>
-        <h2>enfermedades:
-        <br>
-        <input type="radio" name="si" value="si">si
-        <input type="radio" name="no" value="no">no
-        </h2>
-            <input type="submit" name="" value="guardar"
-            formaction="http://localhost/proyect5C/registro1.php">
-        
-           </form>
-        </center>
+        <div class="miniTitleContainer">
+            <div class="textoDiv">
+                <h1>Dar en adopcion NO es algo malo!!!</h1>
+            </div>
+        </div>
+        <div class="formContainer">
+            <form action="" method="post" class="formDenuncia">
+                <div class="titleFrom">
+                    <h1>Datos Personales</h1>
+                </div>
+                <div class="divInputs">
+                    <input type="text" placeholder="Nombre" name="nombretx">
+                </div>
+    
+                <div class="divInputs">
+                    <input type="text" placeholder="Ap.Paterno" name="appattx">
+                </div>
+    
+                <div class="divInputs">
+                    <input type="text" placeholder="Ap.Materno" name="apmattx">
+                </div>
+                
+                <div class="divInputs">
+                    <input type="text" placeholder="Correo" name="apmattx">
+                </div>
+    
+                <div class="divInputs">
+                    <input type="text" placeholder="Contraseña" name="apmattx">
+                </div>
+                
+                <div class="buttoContainer">
+                    <button type="button" class="boton" id="mostrarFormulario">Siguiente</button>
+                </div>
+            </form>
+        </div>
+        <div class="formContainer" id="formularioDiv">
+            <form action="" method="post" class="formDenuncia">
+                <div class="titleFrom">
+                    <h1>Cuentanos tu problema</h1>
+                </div>
+                <div class="divInputs">
+                    <input type="text" name="nomAnimal" placeholder="Nombre del Animal" maxlength="300">
+                </div>
+    
+                <div class="divInputs">
+                    <input type="text" name="raza" placeholder="Raza" maxlength="300">
+                </div>
+    
+                <div class="divInputs-nums">
+                    <label for="">Fecha de nacimiento estimada: </label><br>
+                    <input type="date" name="eddEstimada" id="fech">
+                </div>
+    
+                <div class="divInputs">
+                    <input type="text" name="Peso" placeholder="Peso aproximado" maxlength="300">
+                </div>             
+    
+                <div class="divInputs">
+                    <input type="text" name="condicion" placeholder="Cuéntanos sobre su condicion" id="desProblema">
+                </div>
+    
+                <div class="divInputs">
+                    <input type="text" name="enfermedades" placeholder="Tiene enfermedades? si es asi, Cuentanos sobre ellas." id="desProblema">
+                </div>
+    
+                <div class="divInputs">
+                    <input type="text" name="cuidados" placeholder="Requiere cuidados? si es asi, Cuentanos sobre ellos." id="desProblema">
+                </div>
+
+                <div class="divInputs">
+                    <input type="text" name="motivo" placeholder="Describenos el problema" id="desProblema">
+                </div>
+
+                <div class="buttoContainer">
+                    <button type="submit" class="boton">Enviar</button>
+                </div>
+            </form>
+        </div>
     </main>
 
+    
     <footer class="footer">
         <p>Este es el Footer</p>
     </footer>
     <script src="../VrfLogin.js"></script>
+    <script src="javaScript/mostrar.js"></script>
 </body>
 </html>
